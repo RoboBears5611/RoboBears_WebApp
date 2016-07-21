@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears", "RoboBears\RoboBears.csproj", "{4DCFABA4-C5FA-416E-9DD9-36326BC49524}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Tests", "RoboBears.Tests\RoboBears.Tests.csproj", "{6B49C7D5-46D0-4387-AC85-BA73DA4438CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Client", "1. Client", "{B7C2DC0B-FDC1-4D78-8AE9-2DA3C9DEB01E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Tests", "5. Tests", "{727AC2F2-6D80-41A0-BE1A-4A635BE199D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Managers", "2. Managers", "{9A9F1C08-68E8-4984-AD66-E47753A65D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Managers", "RoboBears.Managers\RoboBears.Managers.csproj", "{E498DAE6-DAA8-4CE3-9E75-1A970C88876E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Engines", "3. Engines", "{67E1BD77-A173-4F77-9B7A-F4EE4C57F0BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Engines", "RoboBears.Engines\RoboBears.Engines.csproj", "{27577549-0149-411E-A0A6-25E8F7F37F18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Accessors", "4. Accessors", "{039AB130-D22A-4DD0-94A8-BC21EB93DED1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.DatabaseAccessors", "RoboBears.DatabaseAccessors\RoboBears.DatabaseAccessors.csproj", "{431F7459-4628-4BF5-905A-7ABCDDC3302C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Shared", "5. Shared", "{561F8E9E-9D9F-45B4-B46B-C70692B52FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Contracts", "RoboBears.Contracts\RoboBears.Contracts.csproj", "{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.DataContracts", "RoboBears.DataContracts\RoboBears.DataContracts.csproj", "{4A030316-C420-4553-B267-83CC5C383785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Utilities", "RoboBears.Utilities\RoboBears.Utilities.csproj", "{1C421548-F019-4D6F-91AF-926F3A16E697}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DCFABA4-C5FA-416E-9DD9-36326BC49524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCFABA4-C5FA-416E-9DD9-36326BC49524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCFABA4-C5FA-416E-9DD9-36326BC49524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCFABA4-C5FA-416E-9DD9-36326BC49524}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B49C7D5-46D0-4387-AC85-BA73DA4438CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B49C7D5-46D0-4387-AC85-BA73DA4438CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B49C7D5-46D0-4387-AC85-BA73DA4438CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B49C7D5-46D0-4387-AC85-BA73DA4438CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E498DAE6-DAA8-4CE3-9E75-1A970C88876E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E498DAE6-DAA8-4CE3-9E75-1A970C88876E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E498DAE6-DAA8-4CE3-9E75-1A970C88876E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E498DAE6-DAA8-4CE3-9E75-1A970C88876E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27577549-0149-411E-A0A6-25E8F7F37F18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27577549-0149-411E-A0A6-25E8F7F37F18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27577549-0149-411E-A0A6-25E8F7F37F18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27577549-0149-411E-A0A6-25E8F7F37F18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431F7459-4628-4BF5-905A-7ABCDDC3302C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431F7459-4628-4BF5-905A-7ABCDDC3302C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431F7459-4628-4BF5-905A-7ABCDDC3302C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431F7459-4628-4BF5-905A-7ABCDDC3302C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A030316-C420-4553-B267-83CC5C383785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A030316-C420-4553-B267-83CC5C383785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A030316-C420-4553-B267-83CC5C383785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A030316-C420-4553-B267-83CC5C383785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C421548-F019-4D6F-91AF-926F3A16E697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C421548-F019-4D6F-91AF-926F3A16E697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C421548-F019-4D6F-91AF-926F3A16E697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C421548-F019-4D6F-91AF-926F3A16E697}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4DCFABA4-C5FA-416E-9DD9-36326BC49524} = {B7C2DC0B-FDC1-4D78-8AE9-2DA3C9DEB01E}
+		{6B49C7D5-46D0-4387-AC85-BA73DA4438CD} = {727AC2F2-6D80-41A0-BE1A-4A635BE199D7}
+		{E498DAE6-DAA8-4CE3-9E75-1A970C88876E} = {9A9F1C08-68E8-4984-AD66-E47753A65D85}
+		{27577549-0149-411E-A0A6-25E8F7F37F18} = {67E1BD77-A173-4F77-9B7A-F4EE4C57F0BB}
+		{431F7459-4628-4BF5-905A-7ABCDDC3302C} = {039AB130-D22A-4DD0-94A8-BC21EB93DED1}
+		{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F} = {561F8E9E-9D9F-45B4-B46B-C70692B52FA0}
+		{4A030316-C420-4553-B267-83CC5C383785} = {561F8E9E-9D9F-45B4-B46B-C70692B52FA0}
+		{1C421548-F019-4D6F-91AF-926F3A16E697} = {561F8E9E-9D9F-45B4-B46B-C70692B52FA0}
+	EndGlobalSection
+EndGlobal
