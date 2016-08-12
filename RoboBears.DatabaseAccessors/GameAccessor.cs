@@ -1,10 +1,5 @@
 ﻿using RoboBears.Contracts;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RoboBears.DataContracts;
 using RoboBears.DatabaseAccessors.EntityFramework;
 using Game = RoboBears.DataContracts.Game;
 

@@ -1,13 +1,7 @@
 ﻿using RoboBears.Contracts;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RoboBears.DataContracts;
 using Year = RoboBears.DataContracts.Year;
 using RoboBears.DatabaseAccessors.EntityFramework;
-using System.Diagnostics;
 
 namespace RoboBears.DatabaseAccessors
 {
