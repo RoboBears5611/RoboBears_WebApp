@@ -15,6 +15,6 @@ namespace RoboBears.Contracts
 
         Year CreateYear(Year year);
 
-        Year ModifyYear(Year newYear, int oldYearId);
+        Year ModifyYear(Year newYear);
     }
 }
