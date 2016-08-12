@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.DataContracts", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Utilities", "RoboBears.Utilities\RoboBears.Utilities.csproj", "{1C421548-F019-4D6F-91AF-926F3A16E697}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.DatabaseAccessors.Tests", "RoboBears.DatabaseAccessors.Tests\RoboBears.DatabaseAccessors.Tests.csproj", "{4A82AAB2-0204-4A3D-953F-AE01E8A388E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{1C421548-F019-4D6F-91AF-926F3A16E697}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C421548-F019-4D6F-91AF-926F3A16E697}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C421548-F019-4D6F-91AF-926F3A16E697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A82AAB2-0204-4A3D-953F-AE01E8A388E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A82AAB2-0204-4A3D-953F-AE01E8A388E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A82AAB2-0204-4A3D-953F-AE01E8A388E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A82AAB2-0204-4A3D-953F-AE01E8A388E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -82,5 +88,6 @@ Global
 		{E960EEFE-0BBA-4045-8EBB-1BFEE99C979F} = {561F8E9E-9D9F-45B4-B46B-C70692B52FA0}
 		{4A030316-C420-4553-B267-83CC5C383785} = {561F8E9E-9D9F-45B4-B46B-C70692B52FA0}
 		{1C421548-F019-4D6F-91AF-926F3A16E697} = {561F8E9E-9D9F-45B4-B46B-C70692B52FA0}
+		{4A82AAB2-0204-4A3D-953F-AE01E8A388E0} = {727AC2F2-6D80-41A0-BE1A-4A635BE199D7}
 	EndGlobalSection
 EndGlobal
