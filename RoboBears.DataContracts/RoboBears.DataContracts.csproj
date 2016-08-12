@@ -40,7 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alliance.cs" />
+    <Compile Include="Competition.cs" />
+    <Compile Include="CompetitionType.cs" />
+    <Compile Include="Description.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="ImageData.cs" />
+    <Compile Include="ImageType.cs" />
+    <Compile Include="Mat.cs" />
+    <Compile Include="Match.cs" />
+    <Compile Include="MatchType.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Obstacle.cs" />
+    <Compile Include="ObstacleQualityPair.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Robot.cs" />
+    <Compile Include="Strength.cs" />
+    <Compile Include="StrengthQualityPair.cs" />
+    <Compile Include="Team.cs" />
+    <Compile Include="Year.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
