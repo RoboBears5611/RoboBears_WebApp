@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="IGameAccessor.cs" />
     <Compile Include="IMatAccessor.cs" />
+    <Compile Include="IObstacleAccessor.cs" />
     <Compile Include="IYearAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

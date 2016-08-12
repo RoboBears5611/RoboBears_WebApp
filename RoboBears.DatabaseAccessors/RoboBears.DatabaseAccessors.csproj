@@ -76,6 +76,7 @@
     <Compile Include="EntityFramework\Year.cs" />
     <Compile Include="GameAccessor.cs" />
     <Compile Include="MatAccessor.cs" />
+    <Compile Include="ObstacleAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YearAccessor.cs" />
   </ItemGroup>
