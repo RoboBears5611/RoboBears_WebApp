@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompetitionAccessor.cs" />
     <Compile Include="DescriptionAccessor.cs" />
     <Compile Include="EntityFramework\Competition.cs" />
     <Compile Include="EntityFramework\CompetitionType.cs" />
