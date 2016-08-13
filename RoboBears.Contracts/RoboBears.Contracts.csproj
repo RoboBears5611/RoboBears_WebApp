@@ -41,17 +41,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICompetitionAccessor.cs" />
+    <Compile Include="ICompetitionManager.cs" />
+    <Compile Include="ICompetitionTypeManager.cs" />
     <Compile Include="ICompetitionTypeAccessor.cs" />
+    <Compile Include="IDescriptionManager.cs" />
     <Compile Include="IDescriptionAccessor.cs" />
+    <Compile Include="IGameManager.cs" />
     <Compile Include="IGameAccessor.cs" />
+    <Compile Include="IMatchManager.cs" />
+    <Compile Include="IMatManager.cs" />
     <Compile Include="IMatAccessor.cs" />
     <Compile Include="IMatchAccessor.cs" />
+    <Compile Include="IMemberManager.cs" />
     <Compile Include="IMemberAccessor.cs" />
+    <Compile Include="IObstacleManager.cs" />
     <Compile Include="IObstacleAccessor.cs" />
+    <Compile Include="IPositionManager.cs" />
     <Compile Include="IPositionAccessor.cs" />
+    <Compile Include="IStrengthManager.cs" />
     <Compile Include="IStrengthAccessor.cs" />
+    <Compile Include="ITeamManager.cs" />
     <Compile Include="ITeamAccessor.cs" />
     <Compile Include="IYearAccessor.cs" />
+    <Compile Include="IYearManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

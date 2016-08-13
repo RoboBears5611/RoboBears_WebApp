@@ -33,7 +33,7 @@ namespace RoboBears.DatabaseAccessors
             }
         }
 
-        public Competition Modify(Competition newCompetition)
+        public Competition ModifyCompetition(Competition newCompetition)
         {
             using (var db = new DatabaseContext())
             {
