@@ -82,6 +82,7 @@
     <Compile Include="MatchAccessor.cs" />
     <Compile Include="MemberAccessor.cs" />
     <Compile Include="ObstacleAccessor.cs" />
+    <Compile Include="PositionAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamAccessor.cs" />
     <Compile Include="YearAccessor.cs" />
