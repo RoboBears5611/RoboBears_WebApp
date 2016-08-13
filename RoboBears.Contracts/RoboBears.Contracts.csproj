@@ -49,6 +49,7 @@
     <Compile Include="IGameManager.cs" />
     <Compile Include="IGameAccessor.cs" />
     <Compile Include="IMatchManager.cs" />
+    <Compile Include="IMatchTypeManager.cs" />
     <Compile Include="IMatManager.cs" />
     <Compile Include="IMatAccessor.cs" />
     <Compile Include="IMatchAccessor.cs" />
@@ -58,11 +59,14 @@
     <Compile Include="IObstacleAccessor.cs" />
     <Compile Include="IPositionManager.cs" />
     <Compile Include="IPositionAccessor.cs" />
+    <Compile Include="IMatchTypeAccessor.cs" />
+    <Compile Include="IRobotManager.cs" />
     <Compile Include="IStrengthManager.cs" />
     <Compile Include="IStrengthAccessor.cs" />
     <Compile Include="ITeamManager.cs" />
     <Compile Include="ITeamAccessor.cs" />
     <Compile Include="IYearAccessor.cs" />
+    <Compile Include="IRobotAccessor.cs" />
     <Compile Include="IYearManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
