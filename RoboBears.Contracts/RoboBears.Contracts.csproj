@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ICompetitionAccessor.cs" />
+    <Compile Include="ICompetitionTypeAccessor.cs" />
     <Compile Include="IDescriptionAccessor.cs" />
     <Compile Include="IGameAccessor.cs" />
     <Compile Include="IMatAccessor.cs" />
