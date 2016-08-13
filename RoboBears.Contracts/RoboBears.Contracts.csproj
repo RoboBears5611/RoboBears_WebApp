@@ -47,6 +47,7 @@
     <Compile Include="IMatAccessor.cs" />
     <Compile Include="IMatchAccessor.cs" />
     <Compile Include="IObstacleAccessor.cs" />
+    <Compile Include="ITeamAccessor.cs" />
     <Compile Include="IYearAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
