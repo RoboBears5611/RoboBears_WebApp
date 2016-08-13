@@ -80,6 +80,7 @@
     <Compile Include="GameAccessor.cs" />
     <Compile Include="MatAccessor.cs" />
     <Compile Include="MatchAccessor.cs" />
+    <Compile Include="MemberAccessor.cs" />
     <Compile Include="ObstacleAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeamAccessor.cs" />

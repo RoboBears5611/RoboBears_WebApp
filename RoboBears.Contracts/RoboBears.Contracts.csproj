@@ -46,6 +46,7 @@
     <Compile Include="IGameAccessor.cs" />
     <Compile Include="IMatAccessor.cs" />
     <Compile Include="IMatchAccessor.cs" />
+    <Compile Include="IMemberAccessor.cs" />
     <Compile Include="IObstacleAccessor.cs" />
     <Compile Include="ITeamAccessor.cs" />
     <Compile Include="IYearAccessor.cs" />
