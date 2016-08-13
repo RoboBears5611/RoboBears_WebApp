@@ -16,12 +16,18 @@ namespace RoboBears.Models
             // Add custom user claims here
             return userIdentity;
         }
+
+        public int TeamId { get; set; }
+
+        public int? MemberId { get; set; }
+
+        public bool isTeamRegistered { get; set; }
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("RoboBears", throwIfV1Schema: false)
+            : base("name=RoboBears", throwIfV1Schema: false)
         {
         }
 
