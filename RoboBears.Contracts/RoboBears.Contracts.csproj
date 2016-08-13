@@ -49,6 +49,7 @@
     <Compile Include="IMemberAccessor.cs" />
     <Compile Include="IObstacleAccessor.cs" />
     <Compile Include="IPositionAccessor.cs" />
+    <Compile Include="IStrengthAccessor.cs" />
     <Compile Include="ITeamAccessor.cs" />
     <Compile Include="IYearAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
