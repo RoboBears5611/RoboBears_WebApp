@@ -55,6 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompetitionAccessor.cs" />
+    <Compile Include="CompetitionTypeAccessor.cs" />
+    <Compile Include="DescriptionAccessor.cs" />
     <Compile Include="EntityFramework\Competition.cs" />
     <Compile Include="EntityFramework\CompetitionType.cs" />
     <Compile Include="EntityFramework\DatabaseContext.cs" />
@@ -74,7 +77,17 @@
     <Compile Include="EntityFramework\Strength.cs" />
     <Compile Include="EntityFramework\Team.cs" />
     <Compile Include="EntityFramework\Year.cs" />
+    <Compile Include="GameAccessor.cs" />
+    <Compile Include="MatAccessor.cs" />
+    <Compile Include="MatchAccessor.cs" />
+    <Compile Include="MemberAccessor.cs" />
+    <Compile Include="ObstacleAccessor.cs" />
+    <Compile Include="PositionAccessor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MatchTypeAccessor.cs" />
+    <Compile Include="StrengthAccessor.cs" />
+    <Compile Include="TeamAccessor.cs" />
+    <Compile Include="RobotAccessor.cs" />
     <Compile Include="YearAccessor.cs" />
   </ItemGroup>
   <ItemGroup>

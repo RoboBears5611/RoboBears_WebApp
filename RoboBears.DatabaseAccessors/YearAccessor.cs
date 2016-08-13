@@ -1,10 +1,5 @@
 ﻿using RoboBears.Contracts;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using RoboBears.DataContracts;
 using Year = RoboBears.DataContracts.Year;
 using RoboBears.DatabaseAccessors.EntityFramework;
 
@@ -32,12 +27,20 @@ namespace RoboBears.DatabaseAccessors
 
         public Year[] GetYears()
         {
-            throw new NotImplementedException();
+            using (var db = new DatabaseContext())
+            {
+                return db.Years.Select(year => (Year)year).ToArray();
+            }
         }
 
-        public Year ModifyYear(Year newYear, int oldYearId)
+        public Year ModifyYear(Year newYear)
         {
-            throw new NotImplementedException();
+            using (var db = new DatabaseContext())
+            {
+                db.Entry(newYear).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+                return (Year)db.Years.Find(newYear.YearId);
+            }
         }
     }
 }
