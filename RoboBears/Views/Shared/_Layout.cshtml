@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - RoboBears</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link rel="icon" href="~/Content/Images/Logo2.0.png" />
@@ -35,10 +35,9 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-bottom text-center">
+        <p class="navbar-text">&copy; 2016 - The RoboBears</p>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

@@ -3,29 +3,29 @@
 }
 
 <div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>RoboBears</h1>
+    <p class="lead">We are a totally awesome running robotics club based out of <a href="https://www.google.com/maps/place/Blair,+NE+68008/">Blair, Nebraska</a></p>
+    <p><strong>We Are the Longest Running Robotics Club in Nebraska.</strong>  And we're here to school all ye young-uns.</p>
+    <p><a href="@Url.Action("About","Home")" class="btn btn-default btn-lg">Learn more &raquo;</a></p>
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>About</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            The RoboBears is an FTC Robotics Club based out of <a href="https://www.google.com/maps/place/Blair,+NE+68008/">Blair, Nebraska</a>.
+            We've been to 5 competitions and counting.  And we've got quite the bio.  Click below to learn more.
         </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="@Url.Action("About","Home")">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Our Database</h2>
+        <p>One of the largest tools is our huge database.  This database is a crowd-sourced collection of team and competition data.  This data is publicly available to any registered team member.</p>
+        <p><a class="btn btn-default" href="@Url.Action("Index","Home",new { area = "Database" })">Start Contributing &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Reports</h2>
+        <p>All of that data we've accumulated can be viewed efficently with our reports.  We give detailed and visual representations of our data so you can make educated decisions on the Mat.  Use this to get visual stats of team's robots, members, and strengths, the outcomes of competitions, and more.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Reports &raquo;</a></p>
     </div>
 </div>

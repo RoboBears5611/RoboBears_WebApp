@@ -2,15 +2,6 @@
     background-color: #909;
 }
 
-.navbar-brand {
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-    .navbar-brand img {
-        height: 40px;
-    }
-
 .navbar-nav > li > a {
     color: #DDD;
 }
@@ -50,4 +41,9 @@ hr{
 
 .jumbotron{
     background-color:#DDBFDD;
+}
+
+.navbar
+.navbar-text{
+    color:#DDD;
 }
