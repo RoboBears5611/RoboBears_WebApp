@@ -15,7 +15,7 @@ namespace RoboBears.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Bio = "No Bio Yet.";
 
             return View();
         }

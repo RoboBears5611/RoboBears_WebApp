@@ -1,0 +1,53 @@
+﻿.navbar {
+    background-color: #909;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+    .navbar-brand img {
+        height: 40px;
+    }
+
+.navbar-nav > li > a {
+    color: #DDD;
+}
+
+    .navbar-nav > li > a:hover,
+    .navbar-nav > li > a:focus {
+        background-color: #707;
+        color: #FFF;
+    }
+
+body {
+    background-color: #DDCCDD;
+}
+
+.navbar-toggle > .icon-bar {
+    background-color: #DDD;
+}
+
+blockquote {
+    border-left: 5px solid rgb(187, 51, 187);
+    background-color: rgb(236, 218, 236);
+}
+
+hr{
+    border-top: 1px solid #a349a4;
+}
+
+.btn-default{
+    background-color:#909;
+    color:#DDCCDD;
+}
+
+.btn-default:hover {
+        background-color: #707;
+        color: #FFF;
+    }
+
+.jumbotron{
+    background-color:#DDBFDD;
+}
