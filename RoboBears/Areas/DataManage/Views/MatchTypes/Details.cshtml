@@ -1,0 +1,26 @@
+﻿@model RoboBears.DatabaseAccessors.EntityFramework.MatchType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MatchType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatchTypeName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MatchTypeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

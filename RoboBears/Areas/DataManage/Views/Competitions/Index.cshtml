@@ -1,0 +1,75 @@
+﻿@model IEnumerable<RoboBears.DatabaseAccessors.EntityFramework.Competition>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CompetitionType.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.year.YearId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lat)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lng)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescriptionId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompetitionType.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.year.YearId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lat)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lng)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescriptionId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CompetitionID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CompetitionID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CompetitionID })
+        </td>
+    </tr>
+}
+
+</table>

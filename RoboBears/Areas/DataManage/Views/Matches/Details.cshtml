@@ -1,0 +1,90 @@
+﻿@model RoboBears.DatabaseAccessors.EntityFramework.Match
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Match</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BlueAllianceTeam1.TeamName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlueAllianceTeam1.TeamName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BlueAllianceTeam2.TeamName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BlueAllianceTeam2.TeamName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Competition.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Competition.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MatchType.MatchTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatchType.MatchTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RedAllianceTeam1.TeamName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RedAllianceTeam1.TeamName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RedAllianceTeam2.TeamName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RedAllianceTeam2.TeamName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WinnerIsBlue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WinnerIsBlue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescriptionId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescriptionId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MatchId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

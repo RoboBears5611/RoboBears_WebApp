@@ -1,0 +1,81 @@
+﻿@model IEnumerable<RoboBears.DatabaseAccessors.EntityFramework.Match>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BlueAllianceTeam1.TeamName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BlueAllianceTeam2.TeamName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Competition.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatchType.MatchTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RedAllianceTeam1.TeamName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RedAllianceTeam2.TeamName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WinnerIsBlue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescriptionId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.BlueAllianceTeam1.TeamName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BlueAllianceTeam2.TeamName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Competition.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatchType.MatchTypeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RedAllianceTeam1.TeamName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RedAllianceTeam2.TeamName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WinnerIsBlue)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescriptionId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.MatchId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.MatchId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.MatchId })
+        </td>
+    </tr>
+}
+
+</table>
