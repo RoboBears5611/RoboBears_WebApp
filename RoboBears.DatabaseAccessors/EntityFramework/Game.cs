@@ -10,7 +10,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public Mat Mat { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public virtual Year Year { get; set; }
 

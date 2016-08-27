@@ -141,7 +141,9 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
 
             modelBuilder.Entity<Team>()
-                .HasMany(t => t.Strengths);
+                .HasMany(t => t.Strengths)
+                .WithRequired(sqp => sqp.Team)
+                .HasForeignKey(sqp => sqp.TeamId);
 
             modelBuilder.Entity<Team>()
                 .HasOptional(t => t.Robot)
@@ -156,10 +158,19 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
                 .WithMany(y => y.Members);
 
             modelBuilder.Entity<Robot>()
-                .HasMany(r => r.ObstacleStrengths);
+                .HasMany(r => r.ObstacleStrengths)
+                .WithRequired(oqp => oqp.Robot)
+                .HasForeignKey(oqp => oqp.RobotId);
 
             modelBuilder.Entity<ObstacleQualityPair>()
-                .HasRequired(oqp => oqp.Obstacle);
+                .HasRequired(oqp => oqp.Obstacle)
+                .WithMany(o => o.ObstacleQualityPairs)
+                .HasForeignKey(oqp => oqp.ObstacleId);
+
+            modelBuilder.Entity<StrengthQualityPair>()
+                .HasRequired(sqp => sqp.Strength)
+                .WithMany(s => s.StrengthQualityPairs)
+                .HasForeignKey(sqp => sqp.StrengthId);
 
             //modelBuilder.Entity<ObstacleImage>()
             //    .HasKey(oi => oi.ImageDataId)
@@ -170,5 +181,9 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
             //    .HasKey(ri => ri.RobotId);
             #endregion
         }
+
+        public System.Data.Entity.DbSet<RoboBears.DatabaseAccessors.EntityFramework.Note> Notes { get; set; }
+
+        public System.Data.Entity.DbSet<RoboBears.DatabaseAccessors.EntityFramework.ObstacleQualityPair> ObstacleQualityPairs { get; set; }
     }
 }

@@ -7,7 +7,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 {
     public class Robot
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int RobotId { get; set; }
 
         public string Name { get; set; }
@@ -18,7 +18,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public float Length { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public virtual Team Team { get; set; }
 

@@ -10,7 +10,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public string Name { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
         public virtual ICollection<Member> Members { get; set; }
 
         public static explicit operator DataContracts.Position(Position value)

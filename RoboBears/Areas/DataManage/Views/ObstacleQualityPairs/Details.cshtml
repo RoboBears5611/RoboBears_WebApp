@@ -1,0 +1,37 @@
+﻿@model RoboBears.DatabaseAccessors.EntityFramework.ObstacleQualityPair
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ObstacleQualityPair</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Obstacle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Obstacle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Robot)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Robot)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Quality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quality)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ObstacleQualityPairId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

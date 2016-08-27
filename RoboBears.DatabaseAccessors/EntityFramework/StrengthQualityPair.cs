@@ -15,6 +15,9 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
         public Strength Strength { get; set; }
 
         public int Quality { get; set; }
+        public int StrengthId { get; set; }
+        public virtual Team Team { get; set; }
+        public int TeamId { get; set; }
 
         public static explicit operator DataContracts.StrengthQualityPair(StrengthQualityPair value)
         {

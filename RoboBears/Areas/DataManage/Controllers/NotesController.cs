@@ -10,116 +10,112 @@ using RoboBears.DatabaseAccessors.EntityFramework;
 
 namespace RoboBears.Areas.DataManage.Controllers
 {
-    public class YearsController : Controller
+    public class NotesController : Controller
     {
         private DatabaseContext db = new DatabaseContext();
 
-        // GET: DataManage/Years
+        // GET: DataManage/Notes
         public ActionResult Index()
         {
-            var years = db.Years.Include(y => y.Game);
-            return View(years.ToList());
+            var notes = db.Notes.Include(n => n.Description);
+            return View(notes.ToList());
         }
 
-        // GET: DataManage/Years/Details/5
+        // GET: DataManage/Notes/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Year year = db.Years.Find(id);
-            if (year == null)
+            Note note = db.Notes.Find(id);
+            if (note == null)
             {
                 return HttpNotFound();
             }
-            if(year.Competitions == null)
-            {
-                year.Competitions = db.Competitions.Where(competition => competition.YearId == id).ToArray();
-            }
-            return View(year);
+            return View(note);
         }
 
-        // GET: DataManage/Years/Create
+        // GET: DataManage/Notes/Create
         public ActionResult Create()
         {
-            ViewBag.YearId = new SelectList(db.Games, "GameId", "Title");
+            ViewBag.DescriptionId = new SelectList(db.Descriptions, "DescriptionId", "Summary");
             return View();
         }
 
-        // POST: DataManage/Years/Create
+        // POST: DataManage/Notes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "YearId")] Year year)
+        public ActionResult Create([Bind(Include = "NoteId,DescriptionId,Body")] Note note)
         {
             if (ModelState.IsValid)
             {
-                db.Years.Add(year);
+                db.Notes.Add(note);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.YearId = new SelectList(db.Games, "GameId", "Title", year.YearId);
-            return View(year);
+            ViewBag.DescriptionId = new SelectList(db.Descriptions, "DescriptionId", "Summary", note.DescriptionId);
+            return View(note);
         }
 
-        // GET: DataManage/Years/Edit/5
+        // GET: DataManage/Notes/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Year year = db.Years.Find(id);
-            if (year == null)
+            Note note = db.Notes.Find(id);
+            if (note == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.YearId = new SelectList(db.Games, "GameId", "Title", year.YearId);
-            return View(year);
+            ViewBag.DescriptionId = new SelectList(db.Descriptions, "DescriptionId", "Summary", note.DescriptionId);
+            return View(note);
         }
 
-        // POST: DataManage/Years/Edit/5
+        // POST: DataManage/Notes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "YearId")] Year year)
+        public ActionResult Edit([Bind(Include = "NoteId,DescriptionId,Body")] Note note)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(year).State = EntityState.Modified;
+                db.Entry(note).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.YearId = new SelectList(db.Games, "GameId", "Title", year.YearId);
-            return View(year);
+            ViewBag.DescriptionId = new SelectList(db.Descriptions, "DescriptionId", "Summary", note.DescriptionId);
+            return View(note);
         }
 
-        // GET: DataManage/Years/Delete/5
+        // GET: DataManage/Notes/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Year year = db.Years.Find(id);
-            if (year == null)
+            Note note = db.Notes.Find(id);
+            if (note == null)
             {
                 return HttpNotFound();
             }
-            return View(year);
+            return View(note);
         }
 
-        // POST: DataManage/Years/Delete/5
+        // POST: DataManage/Notes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Year year = db.Years.Find(id);
-            db.Years.Remove(year);
+            Note note = db.Notes.Find(id);
+            db.Notes.Remove(note);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

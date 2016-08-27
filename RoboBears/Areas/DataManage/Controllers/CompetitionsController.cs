@@ -33,6 +33,7 @@ namespace RoboBears.Areas.DataManage.Controllers
             {
                 return HttpNotFound();
             }
+            competition.Matches = db.Matches.Where(match => match.CompetitionId == id).ToArray();
             return View(competition);
         }
 

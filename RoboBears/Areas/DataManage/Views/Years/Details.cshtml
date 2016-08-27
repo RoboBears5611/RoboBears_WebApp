@@ -17,8 +17,51 @@
         <dd>
             @Html.DisplayFor(model => model.Game.Title)
         </dd>
-
-    </dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.YearId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.YearId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Game.GameId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Game.GameId)
+        </dd>
+</dl>
+    <table class="table">
+        <thead>
+            Competitions
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Competitions.FirstOrDefault().CompetitionID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Competitions.FirstOrDefault().Title)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Competitions.FirstOrDefault().CompetitionType)
+                </th>
+            </tr>
+            @foreach(var competition in Model.Competitions)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => competition.CompetitionID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => competition.Title)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => competition.CompetitionType.Title)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.YearId }) |

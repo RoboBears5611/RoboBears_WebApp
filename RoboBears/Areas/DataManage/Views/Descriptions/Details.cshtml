@@ -28,6 +28,16 @@
 
     </dl>
 </div>
+<h4>Notes:</h4>
+<ul>
+    @foreach (var item in Model.Notes)
+    {
+        <li>
+            @Html.DisplayFor(model => item.Body)
+        </li>
+    }
+
+</ul>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.DescriptionId }) |
     @Html.ActionLink("Back to List", "Index")

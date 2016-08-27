@@ -33,6 +33,7 @@ namespace RoboBears.Areas.DataManage.Controllers
             {
                 return HttpNotFound();
             }
+            mat.Obstacles = db.Obstacles.Where(obstacle => obstacle.MatId == id).ToArray();
             return View(mat);
         }
 

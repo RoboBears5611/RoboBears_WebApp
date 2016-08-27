@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RoboBears.DatabaseAccessors.EntityFramework
 {
@@ -9,7 +10,8 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public string Name { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
+        public virtual ICollection<StrengthQualityPair> StrengthQualityPairs { get;  set; }
 
         public static explicit operator DataContracts.Strength(Strength value)
         {

@@ -28,7 +28,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public bool WinnerIsBlue { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public virtual Competition Competition { get; set; }
 

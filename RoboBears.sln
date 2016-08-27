@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.Utilities", "Robo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoboBears.DatabaseAccessors.Tests", "RoboBears.DatabaseAccessors.Tests\RoboBears.DatabaseAccessors.Tests.csproj", "{4A82AAB2-0204-4A3D-953F-AE01E8A388E0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Database", "6. Database", "{4692E973-B255-4B2C-B404-8197F611F7EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

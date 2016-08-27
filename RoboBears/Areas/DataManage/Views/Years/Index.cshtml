@@ -14,6 +14,9 @@
         <th>
             @Html.DisplayNameFor(model => model.Game.Title)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.YearId)
+        </th>
         <th></th>
     </tr>
 
@@ -23,10 +26,14 @@
             @Html.DisplayFor(modelItem => item.Game.Title)
         </td>
         <td>
+            @Html.DisplayFor(modelItem => item.YearId)
+        </td>
+        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.YearId }) |
             @Html.ActionLink("Details", "Details", new { id=item.YearId }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.YearId })
         </td>
+
     </tr>
 }
 

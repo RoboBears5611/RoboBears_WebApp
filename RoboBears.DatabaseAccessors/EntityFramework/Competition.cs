@@ -28,7 +28,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public ICollection<Match> Matches { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public int YearId { get; set; }
 

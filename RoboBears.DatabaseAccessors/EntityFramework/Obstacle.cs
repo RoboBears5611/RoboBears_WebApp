@@ -17,10 +17,11 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public float Length { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public virtual Mat Mat { get; set; }
         public int MatId { get; set; }
+        public virtual ICollection<ObstacleQualityPair> ObstacleQualityPairs { get;  set; }
 
         public static explicit operator DataContracts.Obstacle(Obstacle value)
         {

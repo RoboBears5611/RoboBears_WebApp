@@ -75,6 +75,102 @@
         </dd>
 
     </dl>
+    <table class="table table-bordered" border="1">
+        <thead>
+            Matches
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().BlueAllianceTeam1Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().BlueAllianceTeam2Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().RedAllianceTeam1Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().RedAllianceTeam2Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().WinnerIsBlue)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().DescriptionId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().Competition)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Matches.FirstOrDefault().MatchType)
+                </th>
+            </tr>
+            @foreach (var match in Model.Matches)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => match.Name)
+                    </td>
+                    <td>
+                        @Html.ActionLink(match.BlueAllianceTeam1.TeamName, "Details", "Teams", new { area = "DataManage", id = match.BlueAllianceTeam1.TeamId })
+                    </td>
+                    <td>
+                        @Html.ActionLink(match.BlueAllianceTeam2.TeamName, "Details", "Teams", new { area = "DataManage", id = match.BlueAllianceTeam2.TeamId })
+                    </td>
+                    <td>
+                        @Html.ActionLink(match.RedAllianceTeam1.TeamName, "Details", "Teams", new { area = "DataManage", id = match.RedAllianceTeam1.TeamId })
+                    </td>
+                    <td>
+                        @Html.ActionLink(match.RedAllianceTeam2.TeamName, "Details", "Teams", new { area = "DataManage", id = match.RedAllianceTeam2.TeamId })
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => match.WinnerIsBlue)
+                    </td>
+                    <td>
+                        @if (match.DescriptionId != null)
+                        {
+                            @Html.ActionLink(match.DescriptionId.ToString(), "Details", "Descriptions", new { area = "DataManage", id = match.DescriptionId })
+                        }
+                    </td>
+                    <td>
+                        @Html.ActionLink(match.Competition.Title, "Details", "Competitions", new { area = "DataManage", id = match.CompetitionId })
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => match.MatchType.MatchTypeName)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @*<table class="table table-bordered" bordered="1">
+        <thead>Teams</thead>
+        <tbody>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(competition => competition.Teams.FirstOrDefault().TeamId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(competition => competition.Teams.FirstOrDefault().TeamName)
+                </th>
+            </tr>
+            @foreach (var team in Model.Teams)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(model => team.TeamId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => team.TeamName)
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>*@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.CompetitionID }) |

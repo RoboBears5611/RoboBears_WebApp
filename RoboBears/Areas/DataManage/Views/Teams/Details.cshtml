@@ -11,6 +11,12 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.TeamId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TeamId)
+        </dd>
+        <dt>
             @Html.DisplayNameFor(model => model.Robot.Name)
         </dt>
 
@@ -36,6 +42,15 @@
 
     </dl>
 </div>
+<h4>Competitions:</h4>
+<ul>
+    @foreach (var competition in Model.Competitions)
+    {
+        <li>
+            @Html.ActionLink(competition.Title, "Details", "Competitions", new { area = "DataManage", id = competition.CompetitionID },null)
+        </li>
+    }
+</ul>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.TeamId }) |
     @Html.ActionLink("Back to List", "Index")

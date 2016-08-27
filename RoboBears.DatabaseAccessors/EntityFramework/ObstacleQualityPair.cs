@@ -7,6 +7,9 @@
         public virtual Obstacle Obstacle { get; set; }
 
         public int Quality { get; set; }
+        public int ObstacleId { get; set; }
+        public virtual Robot Robot { get;  set; }
+        public int RobotId { get; set; }
 
         public static explicit operator DataContracts.ObstacleQualityPair(ObstacleQualityPair value)
         {

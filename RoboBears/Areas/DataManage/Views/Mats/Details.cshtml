@@ -27,6 +27,18 @@
         </dd>
 
     </dl>
+    @if(Model.Obstacles.Count > 0)
+    {
+        <h4>Obstacles:</h4>
+    }
+    <ul>
+        @foreach (var obstacle in Model.Obstacles)
+        {
+            <li>
+                @Html.ActionLink(obstacle.Title,"Details","Obstacles",new { area = "DataManage", id = obstacle.ObstacleId },null)
+            </li>
+        }
+    </ul>
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.MatId }) |

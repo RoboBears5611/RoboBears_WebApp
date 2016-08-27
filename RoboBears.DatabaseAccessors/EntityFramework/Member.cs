@@ -23,7 +23,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public int JoinYearId { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public virtual Team Team { get; set; }
         public int TeamId { get; set; }

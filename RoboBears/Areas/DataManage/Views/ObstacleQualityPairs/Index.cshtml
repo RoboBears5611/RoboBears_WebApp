@@ -1,0 +1,45 @@
+﻿@model IEnumerable<RoboBears.DatabaseAccessors.EntityFramework.ObstacleQualityPair>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Quality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Obstacle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Robot)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Obstacle.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Robot.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ObstacleQualityPairId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ObstacleQualityPairId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ObstacleQualityPairId })
+        </td>
+    </tr>
+}
+
+</table>

@@ -57,7 +57,24 @@ namespace RoboBears.Areas.DataManage.Controllers
         {
             if (ModelState.IsValid)
             {
+                match.Competition = db.Competitions.Find(match.CompetitionId);
+                if(match.Competition.Teams == null)
+                {
+                    match.Competition.Teams = new List<Team>();
+                }
                 db.Matches.Add(match);
+                foreach(var teamId in new[] { match.BlueAllianceTeam1Id, match.BlueAllianceTeam2Id, match.RedAllianceTeam1Id, match.RedAllianceTeam2Id })
+                {
+                    Team team = db.Teams.Find(teamId);
+                    if(team != null)
+                    {
+                        if (!match.Competition.Teams.Contains(team))
+                        {
+                            match.Competition.Teams.Add(team);
+                        }
+                    }
+                }
+                db.Entry(match.Competition).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

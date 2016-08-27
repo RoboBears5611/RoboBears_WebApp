@@ -14,7 +14,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public string ImageType { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public static explicit operator DataContracts.ImageData(ImageData value)
         {

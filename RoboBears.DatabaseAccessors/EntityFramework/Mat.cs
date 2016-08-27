@@ -10,7 +10,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public ICollection<Obstacle> Obstacles { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
         
         public virtual Game Game { get; set; }
 

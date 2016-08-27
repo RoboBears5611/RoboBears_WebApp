@@ -30,7 +30,7 @@ namespace RoboBears.DatabaseAccessors.EntityFramework
 
         public ICollection<StrengthQualityPair> Strengths { get; set; }
 
-        public int DescriptionId { get; set; }
+        public int? DescriptionId { get; set; }
 
         public virtual ICollection<Competition> Competitions { get; set; }
         public virtual ICollection<Match> Blue1Matches { get; set; }

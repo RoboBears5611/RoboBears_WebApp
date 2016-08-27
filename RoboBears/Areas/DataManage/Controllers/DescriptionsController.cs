@@ -32,6 +32,7 @@ namespace RoboBears.Areas.DataManage.Controllers
             {
                 return HttpNotFound();
             }
+            description.Notes = db.Notes.Where(note => note.DescriptionId == id).ToArray();
             return View(description);
         }
 
