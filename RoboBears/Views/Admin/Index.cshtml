@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Admin - Home";
+}
+
+<h2 class="text-danger">ADMIN</h2>
+<hr />
+<p>Welcome to admin, Master Luke.   Or whatever-your-name-is.</p>
+<small>In the event that you were wondering, that is purely a star wars reference, and has nothing to do with my Luke-Like-name.</small>
+
+<h3>What do you want to manage?</h3>
+<ul class="admin-expanders">
+    <li>
+        <div class="row admin-expand-tile text-center" data-toggle="collapse" data-target="#admin-expanded-item-1">
+            <div class="col-md-2 col-xs-12">
+                <span class="glyphicon glyphicon-collapse-down admin-expand-icon"></span>
+                <br class="visible-xs" />
+                <span class="admin-expand-short">Data</span>
+            </div>
+            <div class="col-md-10 hidden-xs text-center">
+                <hr />
+                <span class="admin-expand-text">Manage the Database from a nice, complicated, all-powerful moderator perspective.</span>
+                <br /><br />
+            </div>
+        </div>
+        <div class="collapse" id="admin-expanded-item-1">
+            <h1>Super awesome list of infomation.  causes relevations.</h1>
+        </div>
+    </li>
+    <li>
+        <div class="row admin-expand-tile" data-toggle="collapse" data-target="#admin-expanded-item-2">
+            <div class="col-md-2 col-xs-12 text-center">
+                <span class="glyphicon glyphicon-collapse-down admin-expand-icon"></span>
+                <br class="visible-xs" />
+                <span class="admin-expand-short">Roles</span>
+            </div>
+            <div class="col-md-10 hidden-xs text-center">
+                <hr />
+                <span class="admin-expand-text text-center">Manage the roles or permissions of specific people.  Only available to those blessed with absolute admin privleges by another admin.</span>
+                <br /><br />
+            </div>
+        </div>
+        <div class="collapse" id="admin-expanded-item-2">
+            @{Html.RenderPartial("ManagePartials/Roles");}
+        </div>
+    </li>
+</ul>

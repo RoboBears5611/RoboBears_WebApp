@@ -32,3 +32,42 @@ textarea {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
+
+.admin-expand-icon{
+    font-size:50px;
+}
+
+.admin-expanders{
+    list-style:none;
+    padding:0;
+}
+.admin-expand-tile {
+    background-color: #EBF;
+    border: 5px solid grey;
+}
+.admin-expand-tile:hover{
+    background-color:#C9D;
+    cursor:pointer;
+}
+
+.admin-expand-short{
+    font-size:32px;
+    vertical-align:text-bottom;
+}
+
+.Management-Button{
+    background-color:#EBF;
+    text-align:center;
+    border:2px solid #888;
+}
+
+.Management-Button:hover{
+    background-color:#C9D;
+    cursor:pointer;
+}
+
+.Management-Button h1, .Management-Button h2, .Management-Button h3, .Management-Button h4, .Management-Button h5, .Management-Button h6{
+    margin:0;
+    padding:10px 0 10px 0;
+}
